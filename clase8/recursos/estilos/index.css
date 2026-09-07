@@ -1,0 +1,29 @@
+/*
+Sintaxis
+*/
+/*Regla de estilo (Rule) */
+/*
+selector{
+    propiedad1: valor;
+    propiedad2: valor;
+}
+    */
+/*Selectores de TIPO (es el nombre de la etiqueta) */
+body{
+    background-color: lavender;
+}
+h1{
+    color: brown;
+}
+header{
+    color: #7fff00;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: burlywood;
+}
+h2{
+    color: salmon
+}
+h3{
+    color: #3835cc;
+}

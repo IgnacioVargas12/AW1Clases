@@ -1,0 +1,29 @@
+Comandos de consola
+
+Comandos primera vez (en una computadora/casa)
+- Instalar NodeJS
+- Verificar si está instalado 2 aplicaciones (NodeJS Y npm)(Version alternativa de npm es pnpm)
+Comando: node -v
+Comando: npm -v
+
+- Instalar manejador de paquetes pnpm
+Comando: npm i -g pnpm
+Comando Verificar Version: pnpm -v
+
+Comandos Por Proyecto:
+-Verificar si no existe el package json, si no existe ejecutamos el comando
+Comando: pn init
+
+-Instalar el paquete five-server
+Comando: pn add five-server
+
+Agregar el archivo .gitignore y luego poner las carpetas o archivos que no queremos que git haga un seguimiento
+
+- Reinstalar paquetes si existe package json
+Comando: pn install
+
+-En json cambiar la linea de codigo test por la siguiente:
+Linea: "dev": "five-server"
+
+-Ejecutar en la consola el five server
+Comando: pn dev
