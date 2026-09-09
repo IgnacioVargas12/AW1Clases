@@ -7,6 +7,8 @@ Comando: node -v
 Comando: npm -v
 
 - Instalar manejador de paquetes pnpm
+https://pnpm.io/es/
+https://www.npmjs.com/package/five-server
 Comando: npm i -g pnpm
 Comando Verificar Version: pnpm -v
 

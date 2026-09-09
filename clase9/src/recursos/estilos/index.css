@@ -1,0 +1,111 @@
+/*
+Sintaxis
+*/
+/*Regla de estilo (Rule) */
+/*
+selector{
+    propiedad1: valor;
+    propiedad2: valor;
+}
+    */
+
+/* Importar fuente */
+@font-face {
+    font-family: Poppins;
+    src: url(./fuentes/Poppins-Regular.ttf);
+}
+
+/* Selector * Universal */
+/* *{
+    outline: 1px red solid;
+} */
+
+/*Selectores de TIPO (es el nombre de la etiqueta del elemento) */
+html{
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: lavender;
+}
+
+h1{
+    color: brown;
+
+}
+
+h2{
+    color: salmon;
+
+}
+
+h3{
+    color: #3835cc;
+}
+
+p{
+    font-weight: bold;
+}
+
+
+button{
+    background-color: #84f880;
+    font-weight: bold;
+    font-size: small;
+    border-radius: 10px;
+    border: 3px solid #1e3a8a;
+    border-style: solid;
+}
+
+
+a{
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+img{
+    border: #333333;
+    border-style: solid;
+}
+
+/* Selectores de Clase */
+/* .vinculos{
+    color:black
+} */
+
+/* Selectores de Clase compuestos */
+.vinculos a{
+    color: black
+}
+
+/* Contenido encabezado */
+.encabezado-principal{
+    background-color: #84f880;
+    font-size: larger;
+}
+
+.encabezado-principal .vinculos nav{
+    background-color: aqua;
+}
+
+/*Contenido Principal */
+.contenido-principal{
+
+}
+
+/*Contenido Pie */
+.pie-principal{
+
+}
+
+/*Selector de ID */
+/* #contactos{
+
+} */
+
+/* Selector de Atributos */
+/* [href]{
+
+} */
+
