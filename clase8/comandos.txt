@@ -27,5 +27,10 @@ Comando: pn install
 -En json cambiar la linea de codigo test por la siguiente:
 Linea: "dev": "five-server"
 
+-Crear archivo ".fiveserverrc" y escribir:
+{
+    "root": "src"
+}
+
 -Ejecutar en la consola el five server
 Comando: pn dev
