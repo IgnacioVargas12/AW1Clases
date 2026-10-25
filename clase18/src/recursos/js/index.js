@@ -99,27 +99,61 @@ const contenedorProductos = document.getElementById("contenedor-productos")
 // `
 
 let productosHTML = ''
-productosMascotas.forEach((producto)=>{
-    productosHTML += `
-    <article>
-    <h3>${producto.nombre}</h3>
-        <picture>
-            <img src=${producto.imagen}>
-        </picture>
-        <p>
-            ${producto.descripcion}
-        </p>
-        <ul>
-            <li>
-                ${producto.talles}
-            </li>
-            <li>
-                Precio $ ${producto.precio}
-            </li>
-        </ul>
-        <button>Agregar al carrito</button>
-    </article>
-    `
+// productosMascotas.forEach((producto)=>{
+//     productosHTML += `
+//     <article>
+//     <h3>${producto.nombre}</h3>
+//         <picture>
+//             <img src=${producto.imagen}>
+//         </picture>
+//         <p>
+//             ${producto.descripcion}
+//         </p>
+//         <ul>
+//             <li>
+//                 ${producto.talles}
+//             </li>
+//             <li>
+//                 Precio $ ${producto.precio}
+//             </li>
+//         </ul>
+//         <button>Agregar al carrito</button>
+//     </article>
+//     `
 
-})
+// })
 contenedorProductos.innerHTML = productosHTML
+
+// Función que recibe un contenedor y un arreglo de productos, y genera el HTML correspondiente
+const renderizarProductos = (contenedor, arregloProductos) => {
+    let productosHTML = '';
+
+    // Recorremos el arreglo recibido por parámetro
+    arregloProductos.forEach((producto) => {
+        productosHTML += `
+            <article>
+                <h3>${producto.nombre}</h3>
+                <picture>
+                    <img src="${producto.imagen}" alt="${producto.nombre}">
+                </picture>
+                <p>
+                    ${producto.descripcion}
+                </p>
+                <ul>
+                    <li>Talles: ${producto.talles}</li>
+                    <li>Precio $ ${producto.precio}</li>
+                </ul>
+                <button>Agregar al carrito</button>
+            </article>
+        `;
+    });
+
+    // Opcional pero recomendado: inyectamos el HTML en el contenedor recibido
+    contenedor.innerHTML = productosHTML;
+
+    // Retornamos el string completo del HTML tal como lo pide la consigna
+    return productosHTML;
+};
+
+//Llamas a la función pasándole los dos argumentos
+renderizarProductos(contenedorProductos, productosMascotas);
